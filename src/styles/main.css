@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #BABABA;
+    overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  z-index: 80;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100vw;
+
+  .nav_logo {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+   } 
+}
+
+.mobile_menu {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+      padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  .mobile_menu {
+    visibility: visible;
+  }
+}
+
+
+@font-face {
+    font-family: "Grtsk Giga";
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("Grtsk Giga"), url("/fonts/GrtskGiga-Semibold.woff2") format("woff2"), url("/fonts/GrtskGiga-Semibold.woff") format("woff");
+  }
+
+@font-face {
+    font-family: "Grtsk Giga Bold";
+    font-weight: 700;
+    font-style: bold;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("Grtsk Giga Bold"), url("/fonts/GrtskGiga-Bold.woff2") format("woff2"), url("/fonts/GrtskGiga-Bold.woff") format("woff");
+  }

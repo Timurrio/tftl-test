@@ -1,0 +1,42 @@
+.showreel_container {
+    z-index: 10;
+    display: block;
+    transform: scale(0.75);
+}
+
+.showreel_text {
+        font-family: 'Grtsk Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    fill: white;
+    word-spacing: 5px;
+    user-select: none;
+}
+
+.showreel_svg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+    transform-origin: center center;
+
+}
+
+
+.showreel_circle   {
+   transform: scale(0.3);
+   transform-origin: center;
+}
+
+#circlePath {
+    
+    transform: scale(0.3);
+    transform-origin: center;
+}

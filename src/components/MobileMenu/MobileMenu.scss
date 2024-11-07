@@ -1,0 +1,34 @@
+.mobile-menu_button {
+    font-family: 'Grtsk Giga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    color: black;
+    user-select: none;
+    background: none;
+    border: none;
+}
+
+.mobile-menu_container {
+    position: absolute;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #BABABA;
+}
+
+.mobile-menu_links {
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 50vh;
+    color: white;
+}
